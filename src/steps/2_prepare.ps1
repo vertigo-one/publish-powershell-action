@@ -35,8 +35,9 @@ else {
 }
 
 $FullPath = "$env:GITHUB_WORKSPACE\$env:INPUT_PATH"
-
-if (Test-Path -Path $FullPath -PathType Container) {
+WRite-host "FullPath is: $Fullpath"
+Write-Host "$(Get-ChildItem $FullPath)"
+if (Test-Path -Path $FullPath -PathType Container ) {
     Write-Host "Input 'path' is a directory."
 
     . "$env:GITHUB_ACTION_PATH\src\private\Find-PowerShellFiles.ps1"
