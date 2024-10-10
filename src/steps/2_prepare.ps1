@@ -1,7 +1,7 @@
 Write-Host "Starting Action..."
 
-$PsrgPinnedVerShort = "0.5.23"
-$PsrgPinnedVer = "0.5.23-beta23"
+$PsrgPinnedVerShort = "1.0.5"
+$PsrgPinnedVer = "1.0.5"
 
 Write-Host -Object "Ensuring PowerShellGet 2.2.5 is installed..."
 # Ensuring PowerShellGet stable is at least version 2.2.5
