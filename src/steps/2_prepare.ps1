@@ -36,7 +36,8 @@ else {
 
 $FullPath = "$env:GITHUB_WORKSPACE\$env:INPUT_PATH"
 WRite-host "FullPath is: $Fullpath"
-Write-Host "$(Get-ChildItem)"
+
+write-Host "$(pwd)"
 if (Test-Path -Path $FullPath -PathType Container ) {
     Write-Host "Input 'path' is a directory."
 
